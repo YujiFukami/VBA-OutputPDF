@@ -8,7 +8,7 @@ Option Explicit
 '------------------------------
 
 
-Sub OutputPDF(TargetSheet As Worksheet, Optional FolderPath$, Optional FileName$, _
+Public Sub OutputPDF(TargetSheet As Worksheet, Optional FolderPath$, Optional FileName$, _
               Optional MessageIrunaraTrue As Boolean = True)
 '指定シートをPDF化する
 '20210721
