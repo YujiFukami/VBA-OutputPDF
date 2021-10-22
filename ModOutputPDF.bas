@@ -3,12 +3,9 @@ Option Explicit
 
 'OutputPDF・・・元場所：FukamiAddins3.ModFile
 
-'------------------------------
-
-'------------------------------
 
 
-Public Sub OutputPDF(TargetSheet As Worksheet, Optional FolderPath$, Optional FileName$, _
+Public Sub OutputPDF(TargetSheet As Worksheet, Optional FolderPath As String, Optional FileName As String, _
               Optional MessageIrunaraTrue As Boolean = True)
 '指定シートをPDF化する
 '20210721
@@ -32,7 +29,7 @@ Public Sub OutputPDF(TargetSheet As Worksheet, Optional FolderPath$, Optional Fi
     End If
     
     '出力するPDFのファイル名を作成する
-    Dim OutputFileName$
+    Dim OutputFileName As String
     OutputFileName = FolderPath & "\" & FileName & ".pdf"
     
     'PDFで出力する
